@@ -1,2 +1,2 @@
-# Fichier local contenant l'URL et la clé publishable Supabase : ne pas versionner
-config.js
+# Rien à cacher : config.js contient l'URL et la clé publishable (clé publique),
+# nécessaires pour que le site en ligne se connecte à Supabase.
