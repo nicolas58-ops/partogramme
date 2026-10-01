@@ -20,8 +20,9 @@ dans le dossier parent.)
 - Projet : `zvtpwfqlohcpgqfnclso` (les tables : `patiente`, `grossesse`, `examen`,
   `orientation`, `enfant`, `praticien`, toutes avec RLS ouverte car données fictives).
 - `config.js` contient l'URL du projet et la clé publishable (clé publique, pas secrète).
-  Ce fichier n'est pas versionné : s'il manque (PC réinitialisé), le recréer avec
-  `window.SUPABASE_URL` et `window.SUPABASE_KEY` (via MCP `supabase` : URL du projet +
-  clé publishable). Sans lui, le site reste vide avec une erreur `supabaseUrl is required`.
+  Ce fichier EST versionné : il faut le publier sur GitHub, sinon le site en ligne
+  reste vide avec une erreur `supabaseUrl is required`. S'il manque (PC réinitialisé),
+  le recréer avec `window.SUPABASE_URL` et `window.SUPABASE_KEY` (via MCP `supabase` :
+  URL du projet + clé publishable).
 - Le jeton d'accès personnel Supabase (pour le MCP) est dans `.mcp.json` du dossier
   parent (entête `Authorization`), pas dans ce dossier.
